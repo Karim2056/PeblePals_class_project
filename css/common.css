@@ -53,10 +53,37 @@ body {
 
 .main-header {
     background-color: var(--cream);
-    border-radius: 32px;
+    border-radius: 20px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 32px;
     margin: 32px;
+    height: 60px;
+    position: relative;
+}
+
+.Logo {
+position: absolute;
+left: 32px;
+top: 16px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 800px;
+    font-size: var(--f-u-6);
+    color:var(--text-black);
+    transition: border 0.3s ease-out;
+}
+
+.nav-link.active,
+.nav-link:hover
+{
+    border-bottom: 8px solid var(--text-black);
+}
+
+.desktop-nav {
+    display: flex;
+    gap: 32px
 }
