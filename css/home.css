@@ -1,6 +1,6 @@
 .hero-banner {
     background-image: url(/assets/Banner_image.png);
-    height: 500px;
+    height: 484px;
     background-repeat: no-repeat;
 
     display: flex;
@@ -29,4 +29,33 @@
     text-decoration: none;
     color: var(--text-white);
     font-weight: 800;
+}
+
+.home-testimonials {
+    background-color: var(--yellow);
+    padding: 8px;
+    border-bottom: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.h-testimonial {
+    display: flex;
+    gap: 8px;
+    background-color: black;
+    border: 1px solid var(--red);
+    color: var(--text-white);
+}
+
+.t-rating {
+    background-color: var(--yellow);
+    color: var(--red);
+    font-weight: 800;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
 }
