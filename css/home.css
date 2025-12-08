@@ -88,12 +88,17 @@
 
 .benefit-box.wide {
     grid-column: span 2;
+    
 }
 
 .benefit-box {
     border: 2px solid var(--text-black);
     border-radius: 8px;
     padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .yellow{
@@ -106,4 +111,27 @@
 .blue{
     background-color: var(--blue-light);
     border-radius: 128px 128px 0px 0px;
+}
+
+.bullet {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 50px 4px 4px 50px;
+    
+
+}
+
+.bullet-nr {
+    border-right: 2px solid black;
+    width: 25px;
+    height: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bullet-text {
+    padding-left: 10px;
 }
