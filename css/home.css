@@ -135,3 +135,19 @@
 .bullet-text {
     padding-left: 10px;
 }
+
+.title {
+    font-weight: bold;
+    text-decoration: underline 2px;
+}
+.images {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .images {
+        flex-direction: column;
+    }
+}
