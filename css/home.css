@@ -177,24 +177,23 @@
 
 .jeff-rock-img {
     max-width: 100%;
+    filter: drop-shadow(5px 40px 41px #0000009c);
+}
+.rocks-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
 }
 
 .rock-image {
-    background-color: #EADFD5;
+    background-color: hsl(29, 33%, 88%);
     border: 0px solid #EADFD5;
     border-radius: 7px;
 
-    max-width: 25%;
-    height: auto;
+    /* max-width: 25%; */
+    /* height: auto; */
     display: block;
 
-    background: radial-gradient(
-    circle at 50% 65%,
-        rgba(51, 51, 51, 0.25),
-        rgba(51, 51, 51, 0.25) 1%,
-        rgba(234, 223, 213, 1) 50%,
-        rgba(234, 223, 213, 1) 100%
-);
 }
 
 .black {
@@ -210,7 +209,18 @@
     > p {
         color: white;
         font-weight: bold;
-        font-size: small;
+        font-size: 15px;
+    }
+}
+
+.main-footer {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+
+
+    > p{
+        font-weight: bold;
     }
 }
 
