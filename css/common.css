@@ -208,4 +208,24 @@ color: white;
 .clouds-section {
     background: #90B7BF;
     background: linear-gradient(0deg, rgba(144, 183, 191, 1) 0%, rgba(103, 161, 188, 1) 100%);
+    position: relative;
+}
+
+.cloud {
+    position: absolute;
+}
+
+.cloud.left {
+    top: 16px;
+    left: 0;
+}
+
+.cloud.right {
+    top: 32px;
+    right: 0;
+}
+
+.cloud.small {
+    left: 33%;
+    top: 16px;
 }
