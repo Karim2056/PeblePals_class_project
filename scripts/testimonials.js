@@ -42,7 +42,7 @@ for (let review of testimonialList){
     if (i < review.rating){
         stars += `<img class="star-img" src="/assets/star_yellow.svg">`
     } else {
-        stars += `<img class="star-img" src="/assets/black.svg">`
+        stars += `<img class="star-img" src="/assets/star_black.svg">`
     }
     }
 
@@ -50,11 +50,7 @@ for (let review of testimonialList){
             <div class="testimonial">
                 <div class="t-rating-row">
                     <div class="t-stars">
-                        <img class="star-img" src="/assets/star_yellow.svg">
-                        <img class="star-img" src="/assets/star_yellow.svg">
-                        <img class="star-img" src="/assets/star_yellow.svg">
-                        <img class="star-img" src="/assets/star_black.svg">
-                        <img class="star-img" src="/assets/star_black.svg">
+                     ${stars}
                     </div>
                     <p class="t-name">~${review.name}</p>
                 </div>
