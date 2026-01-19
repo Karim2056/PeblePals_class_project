@@ -209,6 +209,10 @@ color: white;
     background: #90B7BF;
     background: linear-gradient(0deg, rgba(144, 183, 191, 1) 0%, rgba(103, 161, 188, 1) 100%);
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cloud {
