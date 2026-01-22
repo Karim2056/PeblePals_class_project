@@ -46,13 +46,14 @@
     border-radius: 32px;
     display: flex;
     flex-direction: column;
+    
     gap: 4px;
-    box-shadow: var(--card-blue-shadow);
+    box-shadow: var(-58-card-blue-shadow);
+    max-width: 400px;
+    align-self: center;
+    
 }
 
-.stars-row {
-    border-bottom: 1px solid black;
-}
 
 .t-form-input {
     border: 1px solid black;
@@ -69,4 +70,27 @@
     > label {
         text-wrap: nowrap;
     }
+}
+
+.stars-row {
+    border-bottom: 1px solid black;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.star {
+    height: 16px;
+    width: 16px;
+
+    background-image: url(/assets/star_yellow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    > input{
+        display:none;
+    }
+}
+
+.star:has(input:checked) ~.star{
+    background-image: url(/assets/star_black.svg);
 }
