@@ -36,10 +36,27 @@ const testimonialList = [
 let testimonialsBox = document.getElementById("testimonials-box");
 
 for (let review of testimonialList){
+    drawNewTestimonial(review.name, review.review, review.rating);
+}
 
+let tForm = document.getElementById("t-form");
+
+function addTestimonial(event) {
+    event.preventDefault();
+    let name = document.getElementById("t-name").value;
+    let message = document.getElementById("t-message").value;
+    let rating = document.querySelector(`input[name = rating]:checked`).value;
+
+    drawNewTestimonial(name, message, rating);
+}
+
+tForm.addEventListener("submit", addTestimonial);
+
+
+function drawNewTestimonial (name, message, rating) {
     let stars = "";
     for (let i = 0; i < 5; i++) {
-    if (i < review.rating){
+    if (i < rating){
         stars += `<img class="star-img" src="/assets/star_yellow.svg">`
     } else {
         stars += `<img class="star-img" src="/assets/star_black.svg">`
@@ -52,10 +69,10 @@ for (let review of testimonialList){
                     <div class="t-stars">
                      ${stars}
                     </div>
-                    <p class="t-name">~${review.name}</p>
+                    <p class="t-name">~${name}</p>
                 </div>
                 <p class="t-message">
-                    ${review.review}
+                    ${message}
                 </p>
             </div>
        `
