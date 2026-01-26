@@ -11,12 +11,13 @@
     max-width: 800px;
 
     margin: 0 auto;
+    
 
 }
 
 .testimonial{
     padding: 32px;
-    border-radius: 32px;
+    border-radius: 100px;
 
     background: #ffffff;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(152, 222, 245, 1) 150%);
@@ -41,17 +42,16 @@
 .t-form {
     background: #ffffff;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(152, 222, 245, 1) 150%);
-    padding: 32px;
+    padding: 50px;
     border: 2px solid rgb(255, 255, 255);
-    border-radius: 32px;
+    border-radius: 200px;
     display: flex;
     flex-direction: column;
     
     gap: 4px;
     box-shadow: var(-58-card-blue-shadow);
-    max-width: 400px;
+    max-width: 900px;
     align-self: center;
-    
 }
 
 
